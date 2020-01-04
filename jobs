@@ -1,6 +1,6 @@
 job('job_dsl_example'){
 
-    description('This is an example job created using DSL!')
+    description('This is an example job created using DSL')
 
     parameters{
         stringParam('Param1', defaultValue='One', description='This is first parameter')
@@ -12,9 +12,9 @@ job('job_dsl_example'){
         git('https://github.com/mav3n/simple-java-maven-app', 'master')
     }
   
-    triggers {
-        cron('H 5 * * 7')
-    }
+    // triggers {
+    //    cron('H 5 * * 7')
+    // }
   
     steps {
         shell("echo 'Hello World'")
