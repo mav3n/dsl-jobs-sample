@@ -23,8 +23,7 @@ job('job_dsl_example'){
   
     publishers {
         mailer('jenkins-test@mailinator.com', true, true)
-    }
-  
+    }  
 }
 
 job('ansible-users-db-dsl') {
